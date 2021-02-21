@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<title></title>
+</head>
+<body>
+	<h3>BOOKS AVAILABLE</h3>
+	<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Sno</th>
+      <th scope="col">title</th>
+      <th scope="col">author</th>
+      <th scope="col">category</th>
+      <th scope="col">publisher</th>
+      <th scope="col">price</th>
+    </tr>
+  </thead>
+  <tbody>
+  	<%for(var i=0;i<me.length;i++){%>
+    <tr>
+      <th scope="row"><%=i+1%></th>
+      <td><%=me[i].title%></td>
+      <td><%=me[i].author%></td>
+      <td><%=me[i].category%></td>
+      <td><%=me[i].publisher%></td>
+      <td><%=me[i].price%></td>
+    </tr>
+   <%}%>
+  </tbody>
+</table>
+</body>
+</html>
